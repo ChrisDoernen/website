@@ -1,8 +1,13 @@
 (($) => {
   $(() => {
 
-    $("body").css("height", window.innerHeight);
-    $("body").css("width", window.innerWidth);
+    function applySize() {
+      $("body").css("height", window.innerHeight);
+      $("body").css("width", window.innerWidth);
+    }
+
+    window.onresize = applySize;
+    applySize();
 
     const decode = (a) => {
       return a.replace(/[a-zA-Z]/g, (c) => {
