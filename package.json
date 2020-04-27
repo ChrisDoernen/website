@@ -1,9 +1,10 @@
 {
   "scripts": {
     "serve": "live-server index.html --host 0.0.0.0",
-    "build": "static-i18n -i en -i de ."
+    "build": "static-i18n . -l de -i en -i de -o . --outputDefault index.html --outputOther __lng__/index.html --files index.source.html"
   },
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "static-i18n": "^0.2.6"
   }
 }
