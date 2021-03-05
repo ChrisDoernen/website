@@ -43,6 +43,7 @@ body {
 .language a {
   cursor: pointer;
   text-decoration: none;
+  color: inherit;
 }
 
 .language a:hover {
@@ -86,15 +87,13 @@ h3 {
   font-size: 13px;
 }
 
-.email-link {
-  cursor: pointer;
-}
-
 .links {
   margin-top: 30px;
 }
 
 .contact {
+  cursor: pointer;
+  color: inherit;
   grid-area: contact;
   margin-bottom: 10px;
   align-self: flex-end;

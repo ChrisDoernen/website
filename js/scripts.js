@@ -15,12 +15,12 @@
       });
     };
 
-    const mailLink = $(".email-link");
-    mailLink.click(() => {
+    const contact = $(".contact");
+    contact.click(() => {
       const b = "znvygb:znvy@pue";
       const h = "vfgvnaqbreara.qr";
       var y = decode(b + h);
-      mailLink.attr("href", y);
+      contact.attr("href", y);
     });
 
     var part1 = decode("znvy");
